@@ -1,15 +1,17 @@
 // console.log("Hello, Sohan!");
 
-
+// Problem 1 
 function multiplyValue(value: number, multiplier?: number): number {
   return value * (multiplier ?? 2);
 }
 
 
+console.log(multiplyValue(10));   
+console.log(multiplyValue(10, 5)); 
+console.log(multiplyValue(7, 0)); 
 
 
-
-
+// problem 2 
 
 function processInput(value: string | number | boolean): string | number {
     if (typeof value === "string") {
@@ -24,10 +26,15 @@ function processInput(value: string | number | boolean): string | number {
 }
 
 
+// console.log(processInput("  TypeScript  "));
+// console.log(processInput(7));
+// console.log(processInput(true));
+// console.log(processInput(false));
 
 
 
 
+// problem 3
 
 function formatCoordinate(
     coordinate: readonly [number, number, string]
@@ -39,14 +46,19 @@ function formatCoordinate(
 
 
 
+// console.log(formatCoordinate([23.81, 90.41, "Dhaka"]));
+// console.log(formatCoordinate([22.35, 91.78, "Chittagong"]));
 
 
+// problem 4
 
 
 function concatenateArrays<T>(...arrays: T[][]): T[] {
     return arrays.flat();
 }
 
+// console.log(concatenateArrays(["a", "b"], ["c", "d"]));
+// console.log(concatenateArrays([1, 2], [3, 4], [5]));
 
 
 
@@ -55,6 +67,9 @@ function concatenateArrays<T>(...arrays: T[][]): T[] {
 
 
 
+
+
+// problem 5
 
 interface Course {
     title: string;
@@ -79,11 +94,15 @@ const courses: Course[] = [
     { title: "Next.js Pro", students: 85, isPublished: true }
 ];
 
+// console.log(getPopularCourses(courses, 80));
 
 
 
 
 
+
+
+// problem 6
 
 function pluckValues<T, K extends keyof T>(
     items: T[],
@@ -98,11 +117,17 @@ const users = [
     { id: 3, name: "Tariq", role: "Subscriber" }
 ];
 
+// console.log(pluckValues(users, "name"));
+// console.log(pluckValues(users, "id"));
+// console.log(pluckValues(users, "role"));
 
 
 
 
 
+
+
+// problem 7
 
 class Employee {
     protected name: string;
@@ -133,6 +158,8 @@ class Manager extends Employee {
 
 const manager = new Manager("Alice", 50000, "Engineering");
 
+// console.log(manager.getDetails());
+// console.log(manager.getRoleInfo());
 
 
 
@@ -140,7 +167,7 @@ const manager = new Manager("Alice", 50000, "Engineering");
 
 
 
-
+// problem 8
 
 function validateAgeAsync(age: number): Promise<string> {
     return new Promise((resolve, reject) => {
@@ -156,13 +183,13 @@ function validateAgeAsync(age: number): Promise<string> {
 
 // Test 1
 validateAgeAsync(20)
-    .then(result => console.log(result))
-    .catch(error => console.log(error.message));
+    // .then(result => console.log(result))
+    // .catch(error => console.log(error.message));
 
 // Test 2
 validateAgeAsync(15)
-    .then(result => console.log(result))
-    .catch(error => console.log(error.message));
+    // .then(result => console.log(result))
+    // .catch(error => console.log(error.message));
 
 
 
