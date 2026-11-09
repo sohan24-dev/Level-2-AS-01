@@ -18,3 +18,9 @@ type checking ও সাধারণ programming pattern বুঝতে শে�
 
 Markdown ফাইলগুলোতে ধারণাগুলোর ব্যাখ্যা ও code snippet পড়ুন। `solutions.ts`
 ফাইলে থাকা উদাহরণগুলো TypeScript পরিবেশে দেখে বা চালিয়ে অনুশীলন করুন।
+
+
+[type-vs-interface.md](type-vs-interface.md)
+
+
+[type-narrowing.md](type-narrowing.md)
